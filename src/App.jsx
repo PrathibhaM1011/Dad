@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-const API_URL = "http://localhost:3001/memories";
+const API_URL = "https://dad-1-cqla.onrender.com/memories";
 
 const App = () => {
   const [name, setName] = useState('');
