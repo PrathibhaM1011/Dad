@@ -22,15 +22,20 @@ body, html, #root {
   align-items: center;
 }
 
-.basic-beating-heart {
-  animation: basic-beat 1s infinite;
-  filter: drop-shadow(0 0 12px #ff2d5577);
-}
+ .beating-heart {
+      display: block;
+      width: 120px;
+      margin: 50px auto;
+      animation: beat 1s ease-in-out infinite;
+      transform-origin: center;
+    }
 
-@keyframes basic-beat {
-  0%, 100% { transform: scale(1);}
-  50% { transform: scale(1.15);}
-}
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.15); }
+      50% { transform: scale(1.25); }
+      75% { transform: scale(1.15); }
+    }
 
 .basic-formBox {
   background: #fff8fa;
